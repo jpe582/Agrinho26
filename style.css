@@ -1,0 +1,101 @@
+/* Configurações Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2e6f40;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.info-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.info-section h2 {
+    color: #2e6f40;
+}
+
+/* Área Interativa */
+.interactive-farm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    border-top: 5px solid #2e6f40;
+    transition: all 0.3s ease;
+}
+
+.emoji-view {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    animation: bounce 2s infinite;
+}
+
+/* Botão */
+button {
+    background-color: #8cbb3a;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #76a030;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #e2ebe2;
+    color: #555;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
+
+/* Animação simples para dar vida à planta */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
